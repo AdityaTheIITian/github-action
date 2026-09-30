@@ -1,3 +1,5 @@
+name: ci
+
 on:
   push:
     branches: [ main ]
@@ -5,9 +7,8 @@ on:
 
 jobs:
   test:
-    # Specifies the type of machine to run on
     runs-on: ubuntu-latest
 
     steps:
-      - name: "${{ secrets.USER_EMAIL }}"
+      - name: "23f1003148@ds.study.iitm.ac.in"
         run: echo "Hello, world!"

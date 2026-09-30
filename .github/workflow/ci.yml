@@ -1,0 +1,5 @@
+jobs:
+  test:
+    steps:
+      - name: "${{ secrets.USER_EMAIL }}"
+        run: echo "Hello, world!"

@@ -1,5 +1,13 @@
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
 jobs:
   test:
+    # Specifies the type of machine to run on
+    runs-on: ubuntu-latest
+
     steps:
       - name: "${{ secrets.USER_EMAIL }}"
         run: echo "Hello, world!"
